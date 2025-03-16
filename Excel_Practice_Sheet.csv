@@ -1,0 +1,6 @@
+Employee ID,Name,Department,Joining Date,Salary,Bonus (%),Total Compensation
+101,Alice,HR,2022-01-15,50000,5,=E2+(E2*F2/100)
+102,Bob,IT,2021-05-20,70000,10,=E3+(E3*F3/100)
+103,Charlie,Finance,2023-07-10,65000,7,=E4+(E4*F4/100)
+104,David,Marketing,2020-11-05,60000,8,=E5+(E5*F5/100)
+105,Eve,IT,2019-09-30,72000,9,=E6+(E6*F6/100)
