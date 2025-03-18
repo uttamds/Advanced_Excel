@@ -11,37 +11,26 @@ Here’s a sample worksheet idea for demonstrating Conditional Formatting in Exc
 
 Worksheet Name: Conditional Formatting Demo
 
-Columns:
-
-Employee	Department	Salary	Performance Rating	Joining Date
-Alice	HR	55000	4	2018-06-15
-Bob	IT	75000	5	2020-09-23
-Charlie	Finance	48000	3	2019-04-10
-David	IT	82000	2	2021-11-30
-Emma	Marketing	65000	5	2017-02-01
-
-
-
-⸻
+![image](https://github.com/user-attachments/assets/e1bef38c-a8ca-438d-97b3-df548eee31e8)
 
 Conditional Formatting Rules to Apply:
-	1.	Highlight High Salaries
-	•	Select Salary column.
-	•	Apply formatting where Salary > 70000 (e.g., highlight in green).
-	2.	Color Performance Ratings
-	•	Select Performance Rating column.
-	•	Use a 3-color scale:
-	•	Red (Low: 1-2)
-	•	Yellow (Medium: 3-4)
-	•	Green (High: 5)
-	3.	Highlight Employees with 5+ Years of Experience
-	•	Select Joining Date column.
-	•	Use a formula:
-=TODAY()-A2>1825 (for 5 years in days).
-	•	Apply a blue fill.
-	4.	Department-Wise Formatting
-	•	Select Department column.
-	•	Apply Unique Colors to each department.
+- Highlight High Salaries
+-- Select Salary column.
+-- Apply formatting where Salary > 70000 (e.g., highlight in green).
+- Color Performance Ratings
+- Select Performance Rating column.
+-- Use a 3-color scale:
+-- Red (Low: 1-2)
+-- Yellow (Medium: 3-4)
+-- Green (High: 5)
+- Highlight Employees with 5+ Years of Experience
+-- Select Joining Date column.
+-- Use a formula:=TODAY()-A2>1825 (for 5 years in days).
+-- Apply a blue fill.
+- Department-Wise Formatting
+-- Select Department column.
+-- Apply Unique Colors to each department.
+
 
 ⸻
 
