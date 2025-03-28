@@ -1,0 +1,26 @@
+Here’s a sample dataset you can use in Excel to practice filtering and sorting. The data set contains a mix of customer information, products, and sales.
+
+| Customer ID | First Name | Last Name | Age | Gender | City        | Product        | Quantity | Unit Price | Total Price |
+|-------------|------------|-----------|-----|--------|-------------|----------------|----------|------------|-------------|
+| 1001        | John       | Doe       | 29  | Male   | New York    | Laptop         | 2        | 950.00     | 1900.00     |
+| 1002        | Jane       | Smith     | 35  | Female | Los Angeles | Smartphone     | 1        | 800.00     | 800.00      |
+| 1003        | Bob        | Johnson   | 45  | Male   | Chicago     | Headphones     | 3        | 50.00      | 150.00      |
+| 1004        | Alice      | Brown     | 28  | Female | Miami       | Laptop         | 1        | 950.00     | 950.00      |
+| 1005        | Charlie    | Davis     | 60  | Male   | Seattle     | Camera         | 2        | 400.00     | 800.00      |
+| 1006        | Dave       | Wilson    | 32  | Male   | Denver      | Tablet         | 1        | 450.00     | 450.00      |
+| 1007        | Emma       | Moore     | 22  | Female | Houston     | Smartphone     | 2        | 750.00     | 1500.00     |
+| 1008        | Frank      | Taylor    | 38  | Male   | New York    | Laptop         | 1        | 950.00     | 950.00      |
+| 1009        | Grace      | Anderson  | 27  | Female | Miami       | Headphones     | 4        | 50.00      | 200.00      |
+| 1010        | Henry      | Thomas    | 50  | Male   | Seattle     | Camera         | 3        | 400.00     | 1200.00     |
+
+### Instructions for Filtering and Sorting:
+
+1. **Sorting:**
+   - You can sort the dataset based on the “Age” column to view customers in ascending or descending order of age.
+   - You can also sort by “Total Price” to see the highest or lowest sales.
+
+2. **Filtering:**
+   - Filter by “Gender” to view only male or female customers.
+   - Filter by “City” to view all customers from a specific city (e.g., New York).
+   - Filter by “Product” to see all customers who bought a specific item, like "Laptop" or "Smartphone."
+   - Use custom filters, like filtering by “Age” greater than 30 or by “Total Price” greater than 1000.
