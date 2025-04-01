@@ -1,0 +1,15 @@
+Sub SumColumnAndDisplay()
+    Dim total As Double
+    Dim cell As Range
+
+    ' Initialize total variable
+    total = 0
+
+    ' Loop through each cell in column A (A1 to A5)
+    For Each cell In Range("A1:A5")
+        total = total + cell.Value
+    Next cell
+
+    ' Display the total in a message box
+    MsgBox "The sum of the numbers is: " & total
+End Sub
