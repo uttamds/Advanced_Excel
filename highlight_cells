@@ -1,0 +1,16 @@
+Sub HighlightMarks()
+    Dim ws As Worksheet
+    Dim cell As Range
+    
+    ' Set the worksheet (change "Sheet1" to your sheet name if different)
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+    
+    ' Loop through Test1, Test2, and Test3 columns (Assuming B to D)
+    For Each cell In ws.Range("B2:D11") ' Adjust range if needed
+        If IsNumeric(cell.Value) And cell.Value > 50 Then
+            cell.Interior.Color = RGB(255, 255, 0) ' Yellow color
+        End If
+    Next cell
+    
+    MsgBox "Highlighting complete!", vbInformation
+End Sub
