@@ -1,0 +1,35 @@
+Sub GenerateSalesReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Dim lastRow As Long, reportRow As Long
+    Dim salesThreshold As Double
+    salesThreshold = 10000 ' Set a threshold for high sales
+
+    ' Set worksheets
+    Set wsData = ThisWorkbook.Sheets("SalesData")
+    Set wsReport = ThisWorkbook.Sheets("Report")
+
+    ' Find last row in data sheet
+    lastRow = wsData.Cells(Rows.Count, 1).End(xlUp).Row
+    reportRow = 2 ' Start pasting from row 2 in the report sheet
+
+    ' Clear previous report
+    wsReport.Cells.Clear
+
+    ' Add headers
+    wsReport.Range("A1:D1").Value = Array("Region", "Product", "Sales", "Date")
+
+    ' Loop through data and filter high sales
+    Dim i As Long
+    For i = 2 To lastRow
+        If wsData.Cells(i, 3).Value > salesThreshold Then
+            wsReport.Cells(reportRow, 1).Resize(1, 4).Value = wsData.Cells(i, 1).Resize(1, 4).Value
+            reportRow = reportRow + 1
+        End If
+    Next i
+
+    ' Apply formatting
+    wsReport.Columns("A:D").AutoFit
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    MsgBox "Sales report generated successfully!", vbInformation
+End Sub
