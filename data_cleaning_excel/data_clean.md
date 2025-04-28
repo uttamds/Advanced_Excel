@@ -70,6 +70,7 @@ Use `=VALUE(A2)` or use the **Error Smart Tag** to convert to number.
 - Use filters to find and delete them  
 - Fill blanks using `=IF(A2="", "Unknown", A2)`
 
----
+# Std Deviation
 
-Would you like a downloadable Excel sheet with these examples filled in, or should I format them for your **Crux Training Solutions** slides or worksheets?
+![image](https://github.com/user-attachments/assets/5337c1d1-f194-4d45-b0ad-9c68783b2269)
+
