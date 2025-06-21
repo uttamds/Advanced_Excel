@@ -1,0 +1,37 @@
+Sub AcceptTrainingDetailsLoop()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.Sheets("Sheet1") ' Change as needed
+
+    Dim lastRow As Long
+    Dim studentName As String, rollNumber As String, trainingCode As String
+
+    ' Add headers if first row is empty
+    If ws.Cells(1, 1).Value = "" Then
+        ws.Range("A1").Value = "Name"
+        ws.Range("B1").Value = "Roll"
+        ws.Range("C1").Value = "Training_Code"
+    End If
+
+    Do
+        ' Input from user
+        studentName = InputBox("Enter Name (Leave blank or Cancel to stop):")
+        If studentName = "" Then Exit Do
+
+        rollNumber = InputBox("Enter Roll Number:")
+        If rollNumber = "" Then Exit Do
+
+        trainingCode = InputBox("Enter Training Code:")
+        If trainingCode = "" Then Exit Do
+
+        ' Find next empty row
+        lastRow = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row + 1
+
+        ' Write data to sheet
+        ws.Cells(lastRow, 1).Value = studentName
+        ws.Cells(lastRow, 2).Value = rollNumber
+        ws.Cells(lastRow, 3).Value = trainingCode
+
+    Loop
+
+    MsgBox "Data entry completed.", vbInformation
+End Sub
