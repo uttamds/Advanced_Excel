@@ -1,0 +1,29 @@
+Sub DemoRangeObject()
+
+    ' Write a value to a single cell
+    Range("A1").Value = "Name"
+    Range("B1").Value = "Score"
+
+    ' Write values to a range
+    Range("A2:A4").Value = Application.WorksheetFunction.Transpose(Array("Ravi", "Meena", "Ajay"))
+    Range("B2:B4").Value = Application.WorksheetFunction.Transpose(Array(85, 90, 78))
+
+    ' Change font and color
+    Range("A1:B1").Font.Bold = True
+    Range("A1:B1").Interior.Color = RGB(200, 200, 255)
+
+    ' Add borders
+    Range("A1:B4").Borders.LineStyle = xlContinuous
+
+    ' Merge and center a range
+    Range("A6:B6").Merge
+    Range("A6").Value = "Range Object Demo Completed"
+    Range("A6").HorizontalAlignment = xlCenter
+    Range("A6").Font.Bold = True
+    Range("A6").Interior.Color = RGB(180, 255, 180)
+
+    ' Use a formula in a range
+    Range("B5").Formula = "=AVERAGE(B2:B4)"
+    Range("A5").Value = "Average Score"
+
+End Sub
