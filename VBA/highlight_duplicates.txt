@@ -1,0 +1,23 @@
+Sub HighlightDuplicates()
+    Dim cell As Range
+    Dim checkRange As Range
+    Dim dict As Object
+    Set dict = CreateObject("Scripting.Dictionary")
+    
+    ' Define the range to check (A2 to last used row in column A)
+    Set checkRange = Range("A2:A" & Cells(Rows.Count, "A").End(xlUp).Row)
+
+    ' Clear previous formatting
+    checkRange.Interior.ColorIndex = xlNone
+
+    ' Loop through each cell and check for duplicates
+    For Each cell In checkRange
+        If Not IsEmpty(cell.Value) Then
+            If dict.exists(cell.Value) Then
+                cell.Interior.Color = RGB(255, 100, 100) ' Highlight in red
+            Else
+                dict.Add cell.Value, 1
+            End If
+        End If
+    Next cell
+End Sub
